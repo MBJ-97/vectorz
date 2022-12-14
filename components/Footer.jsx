@@ -15,14 +15,14 @@ export default function Footer() {
         <div className="social w-full md:w-1/2 mt-4 md:mt-0">
           <p>Suivez nous sur :</p>
           <div className="social-link flex items-center gap-6 mt-3">
-            <a href="https://www.google.com" target="_blank">
+            <a href="https://www.google.com" target="_blank" rel="noreferrer">
               <FaFacebookF size={28} />
             </a>
-            <a href="https://www.google.com" target="_blank">
+            <a href="https://www.google.com" target="_blank" rel="noreferrer">
               <FaInstagram size={28} />
             </a>
 
-            <a href="https://www.google.com" target="_blank">
+            <a href="https://www.google.com" target="_blank" rel="noreferrer">
               <FaLinkedinIn size={28} />
             </a>
           </div>
