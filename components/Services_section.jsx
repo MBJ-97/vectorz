@@ -64,8 +64,8 @@ export default function Services_section() {
           <p>
             Nos offrons des services de livraison de tout type de marchendises
             sur l’ensemble des 58 wilayas. Notre but est de vous proposer un
-            service sur mesure et de qualité qui s'adapte à vos besoins et aux
-            besoins de vos clients.
+            service sur mesure et de qualité qui s&#39;adapte à vos besoins et
+            aux besoins de vos clients.
           </p>
         </div>
       </div>
