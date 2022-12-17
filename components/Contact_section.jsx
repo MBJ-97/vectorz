@@ -56,8 +56,8 @@ export default function Contact_section() {
           <div className="flex items-center">
             <Image src={location} width={20} height={20} />
             <p className="ml-6 font-regular">
-              Coop Essalem G2 lot G13 Mohamed Garidi local 'C', Jolie vue, Kouba
-              - Alger.
+              Coop Essalem G2 lot G13 Mohamed Garidi local &aposC&apos, Jolie
+              vue, Kouba - Alger.
             </p>
           </div>
         </div>
