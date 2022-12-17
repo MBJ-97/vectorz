@@ -28,6 +28,16 @@ const PROS = [
 ];
 
 const AboutSection = () => {
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.75,
+        duration: 1.5,
+      },
+    },
+  };
   return (
     <div id="about" className="container mx-auto px-8 py-24 md:py-32">
       <div className="heading flex justify-between flex-wrap md:flex-nowrap pb-16 md:pb-32">

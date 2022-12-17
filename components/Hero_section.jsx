@@ -16,7 +16,13 @@ const Hero_section = () => {
           </h2>
         </div>
         <div className="image">
-          <Image alt="hero image" src={Hero} width={612} height={474} />
+          <Image
+            alt="hero image"
+            priority={true}
+            src={Hero}
+            width={612}
+            height={474}
+          />
         </div>
       </div>
     </>

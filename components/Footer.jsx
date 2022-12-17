@@ -10,20 +10,35 @@ export default function Footer() {
       <div className="flex flex-wrap md:flex-nowrap">
         <div className="brand w-full md:w-1/2">
           <Image src={logo} alt="logo" width={123} height={31} />
-          <p className="mt-3 font-light">Notre slogan se placera ici.</p>
+          <p className="mt-3 font-light">Unlimited vision.</p>
         </div>
         <div className="social w-full md:w-1/2 mt-4 md:mt-0">
           <p>Suivez nous sur :</p>
           <div className="social-link flex items-center gap-6 mt-3">
-            <a href="https://www.google.com" target="_blank" rel="noreferrer">
-              <FaFacebookF size={28} />
+            <a
+              href="https://www.google.com"
+              target="_blank"
+              rel="noreferrer"
+              className="border-2 border-orange rounded-full p-3"
+            >
+              <FaFacebookF size={24} />
             </a>
-            <a href="https://www.google.com" target="_blank" rel="noreferrer">
-              <FaInstagram size={28} />
+            <a
+              href="https://www.google.com"
+              target="_blank"
+              rel="noreferrer"
+              className="border-2 border-orange rounded-full p-3"
+            >
+              <FaInstagram size={24} />
             </a>
 
-            <a href="https://www.google.com" target="_blank" rel="noreferrer">
-              <FaLinkedinIn size={28} />
+            <a
+              href="https://www.google.com"
+              target="_blank"
+              rel="noreferrer"
+              className="border-2 border-orange rounded-full p-3"
+            >
+              <FaLinkedinIn size={24} />
             </a>
           </div>
         </div>
