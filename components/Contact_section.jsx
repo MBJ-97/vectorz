@@ -30,7 +30,7 @@ export default function Contact_section() {
         <div className="w-full md:w-1/2 px-2 md:px-10 mt-10 md:mt-0 flex flex-col gap-6 max-w-lg">
           <h4 className="font-bold text-2xl mb-8">Nos coordonnées</h4>
           <div className="phone-section flex items-center">
-            <Image src={phone} width={20} height={20} />
+            <Image src={phone} alt="phone icon" width={20} height={20} />
             <div className="ml-6 flex flex-col gap-2 text-left">
               <a href="tel:+213555895911">+213 555 89 59 11</a>
               <a href="tel:+213556112604">+213 556 11 26 04</a>
@@ -42,7 +42,7 @@ export default function Contact_section() {
           </div>
           <hr />
           <div className="email-section flex items-center">
-            <Image src={email} width={20} height={20} />
+            <Image src={email} alt="email icon" width={20} height={20} />
             <div className="ml-6 flex flex-col gap-2">
               <a href="mailto:contact.vectorz@mail.com">
                 contact.vectorz@gmail.com
@@ -54,7 +54,7 @@ export default function Contact_section() {
           </div>
           <hr />
           <div className="flex items-center">
-            <Image src={location} width={20} height={20} />
+            <Image src={location} alt="location icon" width={20} height={20} />
             <p className="ml-6 font-regular">
               Coop Essalem G2 lot G13 Mohamed Garidi local &#39;C&#39;, Jolie
               vue, Kouba - Alger.
