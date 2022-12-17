@@ -29,23 +29,37 @@ export default function Contact_section() {
         ></iframe>
         <div className="w-full md:w-1/2 px-2 md:px-10 mt-10 md:mt-0 flex flex-col gap-6 max-w-lg">
           <h4 className="font-bold text-2xl mb-8">Nos coordonnées</h4>
-          <a className="flex items-center" href="tel:0770947801">
+          <div className="phone-section flex items-center">
             <Image src={phone} width={20} height={20} />
-            <p className="ml-3">+213 770 94 78 01</p>
-            <small className="ml-1">(Appuyez pour appeler)</small>
-          </a>
-          <a href="mailto:vectorz@mail.com" className="flex items-center">
+            <div className="ml-6 flex flex-col gap-2 text-left">
+              <a href="tel:+213555895911">+213 555 89 59 11</a>
+              <a href="tel:+213556112604">+213 556 11 26 04</a>
+              <a href="tel:+213556168633">+213 556 16 86 33</a>
+              <small className="text-orange">
+                ( Appuyez sur le num pour appeler )
+              </small>
+            </div>
+          </div>
+          <hr />
+          <div className="email-section flex items-center">
             <Image src={email} width={20} height={20} />
-            <p className="ml-3">vectorz@gmail.com</p>
-            <small className="ml-1">(Appuyez pour envoyer un mail)</small>
-          </a>
-          <a className="flex items-center">
+            <div className="ml-6 flex flex-col gap-2">
+              <a href="mailto:contact.vectorz@mail.com">
+                contact.vectorz@gmail.com
+              </a>
+              <small className="text-orange">
+                ( Appuyez pour envoyer un mail )
+              </small>
+            </div>
+          </div>
+          <hr />
+          <div className="flex items-center">
             <Image src={location} width={20} height={20} />
-            <p className="ml-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Recusandae placeat.
+            <p className="ml-6 font-regular">
+              Coop Essalem G2 lot G13 Mohamed Garidi local 'C', Jolie vue, Kouba
+              - Alger.
             </p>
-          </a>
+          </div>
         </div>
       </div>
     </div>
