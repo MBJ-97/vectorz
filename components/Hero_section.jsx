@@ -11,7 +11,7 @@ const Hero_section = () => {
           </h1>
           <h2>
             Nous livrons vos colis au delai et a l’endroit voulu. Notre but ?
-            c’est que vous puissiez vous concetrer sur votre part du travail et
+            c’est que vous puissiez vous concentrer sur votre part du travail et
             nous laisser le reste !
           </h2>
         </div>

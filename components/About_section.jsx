@@ -37,7 +37,7 @@ const AboutSection = () => {
         </div>
         <div className="title-description w-full md:w-1/2">
           <p>
-            Nos offrons des services de livraison de tout type de marchendises
+            Nos offrons des services de livraison de tous types de marchandises
             sur l’ensemble des 58 wilayas. Notre but est de vous proposer un
             service sur mesure et de qualité qui s&#39;adapte à vos besoins et
             aux besoins de vos clients.

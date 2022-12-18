@@ -25,14 +25,14 @@ const SERVICES = [
     id: 3,
     name: "Déménagement / Manutention",
     description:
-      "Vous déménagez ? Nos moyens humains et materiels sont mis à votre disposition pour transporter vos biens en toute securité.",
+      "Vous déménagez ? Nos moyens humains et matériaux sont mis à votre disposition pour transporter vos biens en toute securité.",
     image: demenagement,
   },
   {
     id: 4,
     name: "Courrier express",
     description:
-      "Nous vous offrons un service de livraison ultra rapide pour vos courriers et documents urgent.",
+      "Nous vous offrons un service de livraison ultra rapide pour vos courriers et documents urgents.",
     image: courrier,
   },
   {
@@ -46,7 +46,7 @@ const SERVICES = [
     id: 6,
     name: "Assistance ouverture de plis",
     description:
-      "VECTORZ établit des rapports comportant toutes les informations nécessaires, et décrivant en détail les résultats sous forme d'un tableau.",
+      "VECTORZ établit des rapports comportant toutes les informations nécessaires, et décrivant en détail les résultats sous forme de tableau.",
     image: ouverture_plis,
   },
 ];
@@ -60,13 +60,13 @@ export default function Services_section() {
         <div className="title w-full md:w-1/3">
           <p className="text-orange">Nos Services</p>
           <h2 className="text-2xl md:text-3xl font-bold mb-6 md:mb-0">
-            Une expertise et un savoir faire mis a votre disposition.
+            Une expertise et un savoir faire mis à votre disposition.
           </h2>
         </div>
         <div className="title-description w-full md:w-1/2">
           <p>
-            Notre savoir faire est mis à votre disposition pour couvrire tous
-            vos besoins en matière de logistique.
+            Notre savoir faire est mis à votre disposition pour couvrir tous vos
+            besoins en matière de logistique.
           </p>
         </div>
       </div>

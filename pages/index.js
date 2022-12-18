@@ -28,7 +28,10 @@ export default function Home() {
         />
 
         <meta property="og:url" content="https://www.vectorz-dz.com" />
-        <meta property="og:image" content="../public/assets/og-logo.png" />
+        <meta
+          property="og:image"
+          content="https://www.vectorz-dz.com/assets/og-logo.png"
+        />
       </Head>
       <Script
         strategy="beforeInteractive"
