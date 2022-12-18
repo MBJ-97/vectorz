@@ -47,7 +47,7 @@ export default function Footer() {
         <p className="font-light">
           © Copyright {year} Vectorz, Tous droits réservés. Développé par{" "}
           <span className="text-orange font-semibold">
-            <a href="https://www.mahdibeldjoudi.xyz">Mahdi Beldjoudi.</a>
+            <a href="https://www.mahdibeldjoudi.xyz">Carré.</a>
           </span>
         </p>
       </div>

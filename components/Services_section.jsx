@@ -11,42 +11,42 @@ const SERVICES = [
     id: 1,
     name: "Transport de marchandise",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus, vel sed, nostrum minima iste tempora dicta totam placeat ea aspernatur sunt! Vel fugit quo illum doloribus molestiae! Error, hic?",
+      "On achemine tout types de colis dans les plus brefs délais et dans les meilleures conditions possibles. ",
     image: transport,
   },
   {
     id: 2,
     name: "Retrait / Dépot cahier de charges",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus, vel sed, nostrum minima iste tempora dicta totam placeat ea aspernatur sunt! Vel fugit quo illum doloribus molestiae! Error, hic?",
+      "Notre service assure la prise en charge total des formalités administratives de retrait, mais aussi le suivi en temps réel l'acheminement du dépôt.",
     image: cahier_charges,
   },
   {
     id: 3,
     name: "Déménagement / Manutention",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus, vel sed, nostrum minima iste tempora dicta totam placeat ea aspernatur sunt! Vel fugit quo illum doloribus molestiae! Error, hic?",
+      "Vous déménagez ? Nos moyens humains et materiels sont mis à votre disposition pour transporter vos biens en toute securité.",
     image: demenagement,
   },
   {
     id: 4,
     name: "Courrier express",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus, vel sed, nostrum minima iste tempora dicta totam placeat ea aspernatur sunt! Vel fugit quo illum doloribus molestiae! Error, hic?",
+      "Nous vous offrons un service de livraison ultra rapide de vos courriers et documents urgent.",
     image: courrier,
   },
   {
     id: 5,
     name: "Navette personnel",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus, vel sed, nostrum minima iste tempora dicta totam placeat ea aspernatur sunt! Vel fugit quo illum doloribus molestiae! Error, hic?",
+      "Pour vos déplacements ou celui de votre personnel, notre service vous offre la rapidité, le confort et la vigilance lors de vos trajets.",
     image: navette_personnel,
   },
   {
     id: 6,
     name: "Assistance ouverture de plis",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus, vel sed, nostrum minima iste tempora dicta totam placeat ea aspernatur sunt! Vel fugit quo illum doloribus molestiae! Error, hic?",
+      "VECTORZ établit des rapports comportant toutes les informations nécessaires, et décrivant en détail les résultats sous forme d'un tableau.",
     image: ouverture_plis,
   },
 ];
@@ -65,10 +65,8 @@ export default function Services_section() {
         </div>
         <div className="title-description w-full md:w-1/2">
           <p>
-            Nos offrons des services de livraison de tout type de marchendises
-            sur l’ensemble des 58 wilayas. Notre but est de vous proposer un
-            service sur mesure et de qualité qui s&#39;adapte à vos besoins et
-            aux besoins de vos clients.
+            Notre savoir faire est mis à votre disposition pour couvrire tous
+            vos besoins en matière de logistique.
           </p>
         </div>
       </div>
