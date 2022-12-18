@@ -16,7 +16,7 @@ export default function Footer() {
           <p>Suivez nous sur :</p>
           <div className="social-link flex items-center gap-6 mt-3">
             <a
-              href="https://www.google.com"
+              href="https://www.facebook.com/profile.php?id=100087342341307"
               target="_blank"
               rel="noreferrer"
               className="border-2 border-orange rounded-full p-3"
@@ -24,7 +24,7 @@ export default function Footer() {
               <FaFacebookF size={24} />
             </a>
             <a
-              href="https://www.google.com"
+              href="https://www.instagram.com/vectorz.dz/?hl=fr"
               target="_blank"
               rel="noreferrer"
               className="border-2 border-orange rounded-full p-3"
@@ -36,7 +36,7 @@ export default function Footer() {
               href="https://www.google.com"
               target="_blank"
               rel="noreferrer"
-              className="border-2 border-orange rounded-full p-3"
+              className="border-2 border-orange rounded-full p-3 hidden"
             >
               <FaLinkedinIn size={24} />
             </a>

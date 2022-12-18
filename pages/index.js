@@ -11,12 +11,24 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Vectorz</title>
+        <title>Vectorz | Votre partenaire logistique</title>
         <meta
           name="description"
-          content="Service de livraison en Algérie qui couvre tout vos besoins logistiques dans les 58 wilayas "
+          content="Service de livraison en Algérie qui couvre tout vos besoins (E-commerce, Colis et courrier express, retrait et dépôt de cahier de charges... ) logistiques dans les 58 wilayas"
         />
         <link rel="icon" href="/favicon.ico" />
+        {/* OG tags  */}
+        <meta
+          property="og:title"
+          content="Vectorz | Services de logistique en Algérie"
+        />
+        <meta
+          property="og:description"
+          content="Service de livraison en Algérie qui couvre tout vos besoins (E-commerce, Colis et courrier express, retrait et dépôt de cahier de charges... ) logistiques dans les 58 wilayas"
+        />
+
+        <meta property="og:url" content="https://www.vectorz-dz.com" />
+        <meta property="og:image" content="../public/assets/og-logo.png" />
       </Head>
       <Script
         strategy="beforeInteractive"

@@ -11,14 +11,14 @@ const SERVICES = [
     id: 1,
     name: "Transport de marchandise",
     description:
-      "On achemine tout types de colis dans les plus brefs délais et dans les meilleures conditions possibles. ",
+      "On achemine tous types de colis dans les plus brefs délais et dans les meilleures conditions possibles.",
     image: transport,
   },
   {
     id: 2,
-    name: "Retrait / Dépot cahier de charges",
+    name: "Retrait/Dépot cahier de charges",
     description:
-      "Notre service assure la prise en charge total des formalités administratives de retrait, mais aussi le suivi en temps réel l'acheminement du dépôt.",
+      "Notre service assure la prise en charge totale des formalités administratives de retrait, mais aussi le suivi en temps réel l'acheminement du dépôt.",
     image: cahier_charges,
   },
   {
@@ -32,7 +32,7 @@ const SERVICES = [
     id: 4,
     name: "Courrier express",
     description:
-      "Nous vous offrons un service de livraison ultra rapide de vos courriers et documents urgent.",
+      "Nous vous offrons un service de livraison ultra rapide pour vos courriers et documents urgent.",
     image: courrier,
   },
   {
