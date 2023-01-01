@@ -42,9 +42,11 @@ const Navbar = () => {
                 <Link href="#services">Nos services</Link>
               </li>
             </ul>
-            <button className="bg-orange px-10 py-3 rounded-lg">
-              Contacter
-            </button>
+            <Link href="#contact">
+              <button className="bg-orange px-10 py-3 rounded-lg">
+                Contacter
+              </button>
+            </Link>
           </div>
         </div>
       )}

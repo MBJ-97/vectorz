@@ -22,9 +22,6 @@ export default function Contact_section() {
           loading="lazy"
           width="100%"
           height="403"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
           title="Contact form Vectorz"
         ></iframe>
         <div className="w-full md:w-1/2 px-2 md:px-10 mt-10 md:mt-0 flex flex-col gap-6 max-w-lg">
