@@ -14,7 +14,11 @@ export default function Home() {
         <title>Vectorz | Votre partenaire logistique</title>
         <meta
           name="description"
-          content="Service de livraison en Algérie qui couvre tout vos besoins (E-commerce, Colis et courrier express, retrait et dépôt de cahier de charges & services de déménagement et de manutention... ) logistiques dans les 58 wilayas"
+          content="Vectorz vous offre son service de livraison en Algérie qui couvre tout vos besoins (E-commerce, Colis et courrier express, retrait et dépôt de cahier de charges & services de déménagement et de manutention... ) logistiques dans les 58 wilayas"
+        />
+        <meta
+          name="keywords"
+          content="Vectorz, livraison e-commerce, logistique, Algérie, e-com"
         />
         <meta
           name="google-site-verification"

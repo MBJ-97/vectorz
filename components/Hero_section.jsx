@@ -17,11 +17,11 @@ const Hero_section = () => {
         </div>
         <div className="image">
           <Image
-            alt="hero image"
-            priority={true}
             src={Hero}
             width={612}
             height={474}
+            alt="hero image"
+            priority={true}
           />
         </div>
       </div>
