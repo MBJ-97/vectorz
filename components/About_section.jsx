@@ -1,3 +1,4 @@
+import { Fade } from "react-awesome-reveal";
 import About_listing from "./About_listing";
 import personnel from "../public/assets/personnel.png";
 import rapidite from "../public/assets/rapidite.png";
@@ -44,16 +45,18 @@ const AboutSection = () => {
           </p>
         </div>
       </div>
-      <div className="content flex flex-wrap md:flex-nowrap justify-between gap-10">
-        {PROS.map((i) => (
-          <About_listing
-            key={i.id}
-            image_link={i.image_link}
-            title={i.title}
-            description={i.description}
-          />
-        ))}
-      </div>
+      <Fade cascade damping={0.8}>
+        <div className="content flex flex-wrap md:flex-nowrap justify-between gap-10">
+          {PROS.map((i) => (
+            <About_listing
+              key={i.id}
+              image_link={i.image_link}
+              title={i.title}
+              description={i.description}
+            />
+          ))}
+        </div>
+      </Fade>
     </div>
   );
 };

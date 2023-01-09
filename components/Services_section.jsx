@@ -1,3 +1,4 @@
+import { Fade } from "react-awesome-reveal";
 import Services_listing from "./Services_listing";
 import transport from "../public/assets/transport_m.png";
 import cahier_charges from "../public/assets/cahier_charges.png";
@@ -72,12 +73,14 @@ export default function Services_section() {
       </div>
       <div className="listing flex flex-col gap-10 md:grid md:grid-cols-2 md:gap-20">
         {SERVICES.map((i) => (
-          <Services_listing
-            key={i.id}
-            name={i.name}
-            description={i.description}
-            image={i.image}
-          />
+          <Fade cascade damping={0.2}>
+            <Services_listing
+              key={i.id}
+              name={i.name}
+              description={i.description}
+              image={i.image}
+            />
+          </Fade>
         ))}
       </div>
     </div>
