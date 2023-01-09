@@ -45,14 +45,14 @@ const AboutSection = () => {
           </p>
         </div>
       </div>
-      <Fade cascade damping={0.8}>
+      <Fade cascade damping={0.2}>
         <div className="content flex flex-wrap md:flex-nowrap justify-between gap-10">
           {PROS.map((i) => (
             <About_listing
-              key={i.id}
               image_link={i.image_link}
               title={i.title}
               description={i.description}
+              key={i.id}
             />
           ))}
         </div>

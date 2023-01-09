@@ -71,17 +71,18 @@ export default function Services_section() {
           </p>
         </div>
       </div>
+
       <div className="listing flex flex-col gap-10 md:grid md:grid-cols-2 md:gap-20">
-        {SERVICES.map((i) => (
-          <Fade cascade damping={0.2}>
+        <Fade cascade damping={0.2}>
+          {SERVICES.map((i) => (
             <Services_listing
               key={i.id}
               name={i.name}
               description={i.description}
               image={i.image}
             />
-          </Fade>
-        ))}
+          ))}
+        </Fade>
       </div>
     </div>
   );
