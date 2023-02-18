@@ -12,7 +12,7 @@ module.exports = {
     },
     extend: {
       boxShadow: {
-        custom: "0px 5px 10px rgba(65, 65, 67, 0.2);",
+        custom: "0px 8px 24px rgba(112, 144, 176, 0.15);",
       },
     },
   },
