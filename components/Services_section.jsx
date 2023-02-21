@@ -55,7 +55,7 @@ export default function Services_section() {
   return (
     <div
       id="services"
-      className="container mx-auto px-8 md:px-16 py-24 md:py-32 bg-black text-white"
+      className="max-w-6xl mx-auto px-8 md:px-16 py-24 md:py-32 bg-black text-white"
     >
       <div className="heading flex justify-between flex-wrap md:flex-nowrap pb-16 md:pb-32">
         <div className="title w-full md:w-1/3">
