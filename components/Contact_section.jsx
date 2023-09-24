@@ -18,7 +18,7 @@ export default function Contact_section() {
           </h2>
         </div>
       </div>
-      <div className="form flex  justify-around flex-wrap md:flex-nowrap">
+      <div className="form flex justify-around flex-wrap md:flex-nowrap">
         <iframe
           className="w-full md:w-1/2 max-w-lg"
           data-tally-src="https://tally.so/embed/nPRvEQ?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
