@@ -6,7 +6,10 @@ import location from "../public/assets/location_icon.png";
 
 export default function Contact_section() {
   return (
-    <div id="contact" className="container mx-auto px-8 py-20 md:py-32">
+    <div
+      id="contact"
+      className="container max-w-7xl mx-auto px-8 py-20 md:py-32"
+    >
       <div className="heading pb-16 md:pb-32">
         <div className="title w-full md:w-1/3">
           <p className="text-orange">Nous Contacter</p>
@@ -15,7 +18,7 @@ export default function Contact_section() {
           </h2>
         </div>
       </div>
-      <div className="form flex flex-wrap md:flex-nowrap">
+      <div className="form flex  justify-around flex-wrap md:flex-nowrap">
         <iframe
           className="w-full md:w-1/2 max-w-lg"
           data-tally-src="https://tally.so/embed/nPRvEQ?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
