@@ -1,34 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# VECTORZ
 
-## Getting Started
+Site vitrine en français pour les solutions logistiques pharmaceutiques, médicales et parapharmaceutiques VECTORZ. Next.js avec Pages Router, React et Tailwind CSS.
 
-First, run the development server:
+## Développement et validation
 
-```bash
+```sh
+npm install
 npm run dev
-# or
-yarn dev
+npm run lint
+npm run build
+npm run start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+La compilation récupère la police Outfit depuis Google Fonts et nécessite un accès réseau.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Contenu
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Les offres, les 25 wilayas et les coordonnées sont centralisées dans `utils/CONSTS.js`. La page principale est assemblée dans `pages/index.js`. L’architecture éditoriale de référence se trouve dans `docs/architecture-contenu-vectorz.md`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Le groupage dessert les wilayas listées avec des départs le samedi, le lundi et le mercredi. Le transport dédié national est présenté sous réserve d’étude. Les conditions de température, de suivi et de preuve restent dépendantes de la prestation convenue.
 
-## Learn More
+## Demandes de contact
 
-To learn more about Next.js, take a look at the following resources:
+Le formulaire prépare localement une demande structurée. Le visiteur peut ouvrir sa messagerie via un lien `mailto:` ou copier la demande et l’envoyer à `vectorzcourrierexpress@gmail.com`. Il n’y a pas d’envoi automatique, de stockage serveur ni de confirmation de réception. Le formulaire Tally historique a été retiré ; aucun accès à son compte externe n’était disponible.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Pour un envoi directement depuis le site, il faudra configurer un formulaire hébergé ou un service d’envoi et vérifier sa réception. Ne pas afficher de message « envoyé » avant une confirmation réelle de ce service.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Vérifications réalisées
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Compilation de production, ESLint, affichage ordinateur et mobile, absence de débordement horizontal à 375 / 768 / 1024 px, navigation mobile, présélection des offres et génération du lien e-mail. Aucun e-mail de test envoyé et aucune publication effectuée.

@@ -1,64 +1,66 @@
-import { Fade } from "react-awesome-reveal";
-import About_listing from "./About_listing";
+import AboutListing from "./About_listing";
 import personnel from "../public/assets/personnel.png";
 import rapidite from "../public/assets/rapidite.png";
 import securite from "../public/assets/securite.png";
-
-const PROS = [
+const benefits = [
   {
-    id: 1,
     image_link: personnel,
-    title: "Personnel qualifié",
+    title: "Une organisation adaptée",
     description:
-      "Vous pouvez compter sur notre personnel pour vous représenter auprès de vos clients de la meilleure des manières.",
+      "Une prestation définie selon vos produits, leur poids et leur volume, vos destinations, la fréquence, les délais et le niveau de service souhaité.",
   },
   {
-    id: 2,
-    image_link: rapidite,
-    title: "Rapidité",
-    description: "Vos colis seront à destination dans les plus brefs délais !",
-  },
-  {
-    id: 3,
     image_link: securite,
-    title: "Securité",
-    description: "Pas de panique ! Vos colis sont entre de bonnes mains.",
+    title: "Une prise en charge structurée",
+    description:
+      "Enlèvement, sécurisation, transport et livraison : notre objectif est de contribuer à sécuriser votre distribution selon les modalités convenues.",
+  },
+  {
+    image_link: rapidite,
+    title: "Une traçabilité définie avec vous",
+    description:
+      "Des informations et des preuves adaptées à votre prestation, aux contraintes de vos produits et au niveau de service retenu.",
   },
 ];
-
-const AboutSection = () => {
+export default function AboutSection() {
   return (
-    <div id="about" className="container mx-auto px-8 py-24 md:py-32">
-      <div className="heading flex justify-between flex-wrap md:flex-nowrap pb-16 md:pb-32">
-        <div className="title w-full md:w-1/3">
-          <p className="text-orange">À propos</p>
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 md:mb-0">
-            Votre partenaire logistique fiable
-          </h2>
+    <section id="about" className="section-wrap">
+      <div className="section-heading">
+        <div>
+          <p className="eyebrow text-orange">À propos de VECTORZ</p>
+          <h2>Une logistique pensée pour le secteur de la santé.</h2>
         </div>
-        <div className="title-description w-full md:w-1/2">
+        <div>
           <p>
-            Nos offrons des services de livraison de tous types de marchandises
-            sur l’ensemble des 58 wilayas. Notre but est de vous proposer un
-            service sur mesure et de qualité qui s&#39;adapte à vos besoins et
-            aux besoins de vos clients.
+            Créée en 2023, VECTORZ est spécialisée dans le transport et les
+            solutions logistiques dédiées aux secteurs pharmaceutique, médical
+            et parapharmaceutique.
+          </p>
+          <p className="mt-4">
+            Nous accompagnons les laboratoires, distributeurs, établissements de
+            santé, fabricants et distributeurs de dispositifs médicaux, ainsi
+            que les autres acteurs de la santé.
           </p>
         </div>
       </div>
-      <Fade cascade damping={0.2}>
-        <div className="content flex flex-wrap md:flex-nowrap justify-between gap-10">
-          {PROS.map((i) => (
-            <About_listing
-              image_link={i.image_link}
-              title={i.title}
-              description={i.description}
-              key={i.id}
-            />
-          ))}
-        </div>
-      </Fade>
-    </div>
+      <p className="max-w-3xl text-lg leading-relaxed">
+        Les produits de santé ne sont pas des marchandises ordinaires. Leur
+        transport peut nécessiter une manipulation adaptée, des conditions
+        particulières et une traçabilité des opérations.
+      </p>
+      <div className="flex flex-wrap md:flex-nowrap gap-6 mt-6">
+        {benefits.map((b) => (
+          <AboutListing key={b.title} {...b} />
+        ))}
+      </div>
+      <div className="border-t border-black/15 pt-8 mt-6">
+        <h3 className="text-xl font-semibold mb-3">Notre vision</h3>
+        <p className="max-w-3xl text-black/70">
+          Devenir un partenaire de référence de la logistique santé en Algérie,
+          en développant le professionnalisme, la sécurité, la traçabilité, la
+          technologie et la qualité de service.
+        </p>
+      </div>
+    </section>
   );
-};
-
-export default AboutSection;
+}

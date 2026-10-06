@@ -1,32 +1,60 @@
-import Hero from "../public/assets/hero-image.png";
 import Image from "next/image";
-
-const Hero_section = () => {
+import Hero from "../public/assets/hero-image.png";
+export default function HeroSection() {
   return (
-    <div className="bg-black">
-      <div className="border-white pt-20 pb-8 md:pt-28 bg-black text-white flex flex-wrap justify-center md:flex-nowrap gap-6 h-screen px-4 md:px-20 max-w-7xl mx-auto">
-        <div className="text-section max-w-sm pt-0 sm:pt-8">
-          <h1 className="mb-6 text-3xl sm:text-5xl font-semibold text-orange">
-            Votre partenaire logistique fiable.
-          </h1>
-          <h2>
-            Nous livrons vos colis au delai et a l’endroit voulu. Notre but ?
-            c’est que vous puissiez vous concentrer sur votre part du travail et
-            nous laisser le reste !
-          </h2>
-        </div>
-        <div className="image-section">
+    <section className="bg-black text-white">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 pt-14 md:pt-24 pb-14">
+        <div className="grid lg:grid-cols-2 items-center gap-10">
+          <div>
+            <p className="eyebrow text-orange">
+              Logistique pharmaceutique, médicale et parapharmaceutique
+            </p>
+            <h1 className="text-4xl sm:text-5xl font-semibold text-orange leading-tight mb-6">
+              Votre partenaire logistique pour les produits de santé en Algérie.
+            </h1>
+            <p className="text-lg leading-relaxed text-white/80">
+              VECTORZ accompagne les professionnels de santé dans leurs
+              expéditions régulières et leurs transports spécifiques. Une
+              solution étudiée selon vos produits, vos destinations et vos
+              contraintes.
+            </p>
+            <div className="flex flex-wrap gap-4 mt-8">
+              <a className="button" href="#contact">
+                Demander une étude logistique
+              </a>
+              <a className="button button-outline" href="#solutions">
+                Voir les solutions
+              </a>
+            </div>
+          </div>
           <Image
             src={Hero}
             width={612}
             height={474}
-            alt="hero image"
-            priority={true}
+            alt="Illustration des services logistiques VECTORZ"
+            priority
+            className="w-full h-auto max-w-xl mx-auto"
           />
         </div>
+        <div className="grid md:grid-cols-3 gap-8 mt-14 pt-8 border-t border-white/20">
+          <div>
+            <p className="text-3xl font-semibold text-orange">25 wilayas</p>
+            <p className="mt-2 text-white/80">
+              Desservies régulièrement en groupage
+            </p>
+          </div>
+          <div>
+            <p className="text-xl font-semibold">Samedi · Lundi · Mercredi</p>
+            <p className="mt-2 text-white/80">Départs réguliers en groupage</p>
+          </div>
+          <div>
+            <p className="text-xl font-semibold">Transport dédié national</p>
+            <p className="mt-2 text-white/80">
+              Destinations et conditions étudiées sur demande
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
-};
-
-export default Hero_section;
+}

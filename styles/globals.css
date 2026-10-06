@@ -3,9 +3,176 @@
 @tailwind utilities;
 
 html {
-  scroll-behavior: smooth !important;
+  scroll-behavior: smooth;
 }
-
-.service-box:hover .arrow {
-  opacity: 1 !important;
+body {
+  margin: 0;
+}
+section {
+  scroll-margin-top: 24px;
+}
+::selection {
+  background: #e63d26;
+  color: white;
+}
+a,
+button,
+input,
+select,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+:focus-visible {
+  outline: 3px solid #e63d26;
+  outline-offset: 5px;
+}
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem 1.4rem;
+  border: 1px solid #e63d26;
+  border-radius: 0.5rem;
+  background: #e63d26;
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: center;
+  transition: background 160ms, border-color 160ms;
+}
+.button:hover {
+  background: #ba2b18;
+  border-color: #ba2b18;
+}
+.button-outline {
+  background: transparent;
+  border-color: #ffffff60;
+}
+.button-outline:hover {
+  background: #ffffff15;
+  border-color: #fff;
+}
+.nav-link:hover,
+.service-link:hover {
+  color: #e63d26;
+}
+.menu-button {
+  padding: 0.7rem;
+  border: 1px solid #ffffff50;
+  border-radius: 0.5rem;
+}
+.section-wrap {
+  max-width: 80rem;
+  margin-inline: auto;
+  padding: 5rem 1.5rem;
+}
+.section-heading {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+.section-heading h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 700;
+  max-width: 36rem;
+}
+.section-heading > p,
+.section-heading > div + div {
+  line-height: 1.8;
+  opacity: 0.8;
+}
+.eyebrow {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.service-box {
+  transition: border-color 160ms;
+}
+.service-box:hover {
+  border-color: #e63d26;
+}
+.form-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+form label {
+  font-size: 0.95rem;
+}
+form input:not([type="checkbox"]),
+form select,
+form textarea {
+  display: block;
+  width: 100%;
+  margin-top: 0.6rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid #ffffff50;
+  border-radius: 0.5rem;
+  background: #111;
+  color: white;
+  min-width: 0;
+}
+form input::placeholder,
+form textarea::placeholder {
+  color: #a8a8a8;
+  opacity: 1;
+}
+form textarea {
+  resize: vertical;
+}
+form select {
+  color-scheme: dark;
+}
+.checkbox-label {
+  display: inline-flex;
+  gap: 0.65rem;
+  align-items: center;
+  min-height: 44px;
+}
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #e63d26;
+}
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -100px;
+  background: white;
+  color: black;
+  padding: 1rem;
+  z-index: 50;
+}
+.skip-link:focus {
+  top: 1rem;
+}
+@media (min-width: 640px) {
+  .form-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 768px) {
+  .section-wrap {
+    padding: 7rem 3rem;
+  }
+  .section-heading {
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    margin-bottom: 4rem;
+  }
+  .section-heading h2 {
+    font-size: 2.25rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
 }
